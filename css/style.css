@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    padding-top: 30px;
+}
+.section-intro{
+    text-align: center;
+}
+.section-intro h1{
+    font-size: 45px;
+    color: firebrick
+}
+.section-intro p{
+    color: darkgray;
+    padding: 30px 99px;
+}
+.team-member{
+    text-align: center;
+}
+.team-member-img img{
+    width: 250px;
+    height: 350px;
+}
+.team-member h5{
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.team-member .team-member-img{
+    position: relative;
+    overflow: hidden;
+}
+.social-links{
+    display: flex;
+}
+.social-links a{
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    color:firebrick;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+.social-links a:hover{
+    background: firebrick;
+    color: white;
+}
+.team-member .social-links{
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.team-member:hover .social-links{
+    bottom: 70px;
+    opacity: 1;
+}
+.team-member:hover img{
+    transform: scale(1.1)
+}
+.team-member img{
+    transition: all 0.5s ease;
+}
